@@ -28,4 +28,4 @@ jobs:
 
       - name: Copy WAR to Server
         run: |
-          sshpass -p "${{ secrets.SERVER_PASSWORD }}" scp -o StrictHostKeyChecking=no target/myapp.war ceadmin@192.168.116.128:/home/ceadmin/
+          sshpass -p v1e1n1k1  scp -o StrictHostKeyChecking=no target/myapp.war ceadmin@192.168.116.128:/home/ceadmin/
