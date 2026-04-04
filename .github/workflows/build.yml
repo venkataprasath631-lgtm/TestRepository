@@ -14,11 +14,10 @@ jobs:
 
       - name: Create WAR file
         run: |
-          cd WEB
           jar -cvf myapp.war *
 
       - name: Upload WAR
         uses: actions/upload-artifact@v4
         with:
           name: myapp
-          path: WEB/myapp.war
+          path: myapp.war
