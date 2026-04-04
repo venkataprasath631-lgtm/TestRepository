@@ -21,6 +21,7 @@ jobs:
       - name: Create WAR file
         run: |
           jar -cvf myapp.war *
-- name: Copy WAR to Server using password
-  run: |
-    sshpass -p v1e1n1k1 scp -o StrictHostKeyChecking=no myapp.war ceadmin@192.168.116.128:/home/ceadmin/
+
+      - name: Copy WAR to Server using password
+        run: |
+          sshpass -p "v1e1n1k1" scp -o StrictHostKeyChecking=no myapp.war ceadmin@192.168.116.128:/home/ceadmin/
