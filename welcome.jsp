@@ -24,7 +24,7 @@
             span{
                 font-weight: normal;
                 font-size: 16px;
-                color: black;
+                color: red;
             }
             </style>
     </head>
